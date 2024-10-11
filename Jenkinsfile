@@ -9,7 +9,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Checkout the code from GitHub
-                git 'https://github.com/Danoch/cicd-webapp-project.git'
+                git branch: 'main', url: 'https://github.com/Danoch/cicd-webapp-project.git'
             }
         }
         
